@@ -1,0 +1,18 @@
+- hosts: ios
+  gather_facts: False
+  roles:
+  - name: brownfield_inventory_builder
+    vars:
+      build:
+      - all
+      - '!vlans'
+      inventory_directory: ./inventory
+
+- hosts: all:!ios
+  gather_facts: False
+  roles:
+  - name: brownfield_inventory_builder
+    vars:
+      build:
+      - all
+      inventory_directory: ./inventory

@@ -1,0 +1,12 @@
+- name: Create inventory directory
+  file:
+    path: "{{ inventory_directory }}/host_vars/{{ inventory_hostname }}"
+    state: directory
+
+- name: Write each resource to a file
+  copy:
+    content: "{{ {item['key']: item['value']} | to_nice_yaml }}"
+    dest: "{{ inventory_directory }}/host_vars/{{ inventory_hostname }}/{{ item['key'] }}.yaml"
+  with_dict: "{{ ansible_network_resources }}"
+  loop_control:
+    label: "{{ inventory_directory }}/host_vars/{{ inventory_hostname }}/{{ item.key }}.yaml"

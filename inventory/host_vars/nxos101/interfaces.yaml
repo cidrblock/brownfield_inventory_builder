@@ -1,0 +1,3 @@
+interfaces:
+-   description: foo
+    name: Ethernet1/1

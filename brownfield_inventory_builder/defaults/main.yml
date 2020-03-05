@@ -1,0 +1,63 @@
+inventory_directory: ./inventory
+
+available_resources:
+  eos:
+  - interfaces
+  - l2_interfaces
+  - l3_interfaces
+  - lacp_interfaces
+  - lacp
+  - lag_interfaces
+  - lldp_global
+  - lldp_interfaces
+  - vlans
+  ios:
+  - interfaces
+  - l2_interfaces
+  - l3_interfaces
+  - lacp_interfaces
+  - lacp
+  - lag_interfaces
+  - lldp_global
+  - lldp_interfaces
+  - vlans
+  iosxr:
+  - interfaces
+  - l2_interfaces
+  - l3_interfaces
+  - lacp_interfaces
+  - lacp
+  - lag_interfaces
+  - lldp_global
+  - lldp_interfaces
+  junos:
+  - interfaces
+  - l2_interfaces
+  - l3_interfaces
+  - lacp_interfaces
+  - lacp
+  - lag_interfaces
+  - lldp_global
+  - lldp_interfaces
+  - vlans
+  nxos:
+  - bfd_interfaces
+  - interfaces
+  - l2_interfaces
+  - l3_interfaces
+  - lacp_interfaces
+  - lacp
+  - lag_interfaces
+  - lldp_global
+  - telemetry
+  - vlans
+  vyos:
+  - interfaces
+  - lag_interfaces
+  - l3_interfaces
+  - lldp_global
+  - lldp_interfaces
+
+ 
+
+

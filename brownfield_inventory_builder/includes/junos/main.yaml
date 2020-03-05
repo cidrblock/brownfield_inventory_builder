@@ -1,0 +1,7 @@
+- include: includes/param_list.yaml
+
+- name: Run the platform facts module
+  junos_facts:
+    gather_subset: 
+    - '!min'
+    gather_network_resources: "{{ resources['actionable'] }}"

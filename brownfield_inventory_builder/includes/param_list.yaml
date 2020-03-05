@@ -1,0 +1,3 @@
+
+- set_fact:
+    resources: "{{ available_resources[ansible_network_os]|default([])|param_list_compare(build) }}"

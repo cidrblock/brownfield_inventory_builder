@@ -1,0 +1,4 @@
+l2_interfaces:
+-   name: Ethernet1
+-   name: Ethernet2
+-   name: Management1

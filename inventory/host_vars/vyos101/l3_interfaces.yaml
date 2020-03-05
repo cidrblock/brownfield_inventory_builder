@@ -1,0 +1,6 @@
+l3_interfaces:
+-   name: eth2
+-   ipv4:
+    -   address: dhcp
+    name: eth0
+-   name: eth1

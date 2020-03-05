@@ -1,0 +1,8 @@
+- name: Run the platform specific tasks
+  include_tasks: "{{ item }}"
+  with_first_found:
+  - "includes/{{ ansible_network_os }}/main.yaml"
+  - "includes/unsupported_platform.yaml"
+
+- name: Write the configuration facts to a file
+  include_tasks: includes/write_to_file.yaml

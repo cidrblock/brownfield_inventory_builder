@@ -1,0 +1,6 @@
+l3_interfaces:
+-   name: Ethernet1
+-   name: Ethernet2
+-   ipv4:
+    -   address: 192.168.101.10/24
+    name: Management1

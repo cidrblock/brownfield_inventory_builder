@@ -1,0 +1,4 @@
+l3_interfaces:
+-   ipv4:
+    -   address: 192.168.101.14/24
+    name: mgmt0

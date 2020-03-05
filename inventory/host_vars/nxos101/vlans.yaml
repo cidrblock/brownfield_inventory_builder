@@ -1,0 +1,6 @@
+vlans:
+-   enabled: true
+    mode: ce
+    name: default
+    state: active
+    vlan_id: 1

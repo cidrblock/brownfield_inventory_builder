@@ -1,0 +1,4 @@
+lacp_interfaces:
+-   name: GigabitEthernet1
+-   name: GigabitEthernet2
+-   name: GigabitEthernet3

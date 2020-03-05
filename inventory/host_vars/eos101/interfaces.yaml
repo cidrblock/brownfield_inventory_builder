@@ -1,0 +1,7 @@
+interfaces:
+-   enabled: true
+    name: Ethernet1
+-   enabled: true
+    name: Ethernet2
+-   enabled: true
+    name: Management1
